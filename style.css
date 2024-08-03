@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik+Mono+One&display=swap);
+
+* {
+    font-family: Rubik Mono One;
+}
+
+:root{
+    --text: #e9d6f7;
+    --background: #12061f;
+    --primary: #bc8cea;
+    --secondary: #891947;
+    --accent: #db3b46;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    transition: 0.5s;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 500px;
+}
+
+h1:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 740px;
+    height: 740px;
+    border-radius: 10px;
+    border: 5px solid var(--text);
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.container div {
+    border-radius: 5px;
+    border: 1px solid var(--text);
+    flex: 1 0 auto; /* flex-grow, flex-shrink, flex-basis */
+    width: calc(100% / 16); /* pokud máte 16 čtverců na stranu, upravte podle potřeby */
+    height: calc(100% / 16); /* pokud máte 16 čtverců na stranu, upravte podle potřeby */
+    background-color: var(--accent);
+}
+
+.container div:hover {
+    transform: scale(1.05);
+}
+
+.gridForm {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: fit-content;
+}
+
+.gridForm input[type="text"]{
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+
+.gridForm input[type="button"]{
+    width: 200px;
+    height: 40px;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#gridBtn:hover {
+    background-color: var(--secondary);
+    transform: scale(1.1);
+    color: var(--text);
+    border: 2px solid var(--text);
+    box-shadow: 2px 2px 3px black;
+}
+
+#rainbowBtn:hover {
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+    transform: scale(1.1);
+    color: var(--text);
+    border: 2px solid var(--text);
+    box-shadow: 2px 2px 3px black;
+}
