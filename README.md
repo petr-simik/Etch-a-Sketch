@@ -1,6 +1,6 @@
 # Etch a Sketch
 
-## [Live Demo](https://qsoftin.github.io/Etch-a-Sketch/)
+## [Live Demo](https://petr-simik.github.io/Etch-a-Sketch/)
 
  Mini project from The Odin Project - Etch a Sketch
 
